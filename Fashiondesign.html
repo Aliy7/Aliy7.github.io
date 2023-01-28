@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+     <meta charset= "utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Liam Henry- Portfolio</title>
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<style type="text/css">
+</style>
+</head>
+<body>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1>Liam Henry</h1>
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">Homepage</a></li>
+				<li><a href="cv.html">cv</a></li>
+				<li class="current_page_item"><a href="Hobbies.html">Hobbies</a></li>
+				<li><a href="units.html">Subjects</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="header-featured"> </div>
+<div id="wrapper">
+	<div id="page" class="container">
+	  <div id="content">
+		<div class="title">
+				<h2>Fashion design</h2>
+		  </div>
+			<div class="container2" id="2">I fervelent about Fashion design and art. In my free times, enjoy creating DIY clothes and putting fashionable outfits together.</div>
+		  <br>
+		 <div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420">
+    <source src="videos/FD.mp4" type="video/mp4">
+    <source src="mov_bbb.ogg" type="video/ogg">
+    Your browser does not support HTML video.
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+		
+		</div>
+	</div>
+	
+</div>
+<div id="copyright" class="container">
+	<p> All Rights Reserved by Ali Muktar 2023.</p>
+</div>
+</body>
+</html>
