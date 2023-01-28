@@ -6,31 +6,35 @@ html, body
 
 body
 {
-	margin: 0px;
-	padding: 0px;
-	background: #702269;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 11pt;
-	font-weight: 300;
+	margin: 0;
+	padding: 0;
+	background: black;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
 	color: #6c6c6c
+
+	
+
 }
 
-
-
-.container
-{
-	margin: 0px auto;
-	width: 1200px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
+
 
 
 #header-wrapper
 {
 	background: #FFFFFF;
+	padding: 20px;
 }
 
 #header
 {
+
 	position: relative;
 	height: 100px;
 }
@@ -241,3 +245,58 @@ input[type=text], select, textarea {
   input[type=submit]:hover {
 	background-color: #a0457a;
   }
+  /* Set the viewport for mobile devices */
+@viewport {
+	width: device-width;
+	initial-scale: 1;
+	minimum-scale: 1;
+	maximum-scale: 1;
+	user-scalable: no;
+  }
+  
+  /* Make sure text is readable on small screens */
+ 
+  /* Use media queries to change layout for different screen sizes */
+  @media only screen and (min-width: 480px) {
+	/* Changes for screens 480px and up */
+  }
+  
+  @media only screen and (min-width: 768px) {
+	/* Changes for screens 768px and up */
+  }
+  
+  @media only screen and (min-width: 1024px) {
+	/* Changes for screens 1024px and up */
+  }
+
+  /**/
+
+  /*Mobile-first responsive design*/
+
+/* Base styles */
+
+
+/* Define a container for the layout */
+
+
+/* Header styles */
+
+
+/* Main content styles */
+main {
+    margin: 20px 0;
+}
+
+/* Styles for specific mobile devices */
+@media only screen and (max-width: 600px) {
+    /* Adjust font size for smaller screens */
+    html,
+    body {
+        font-size: 14px;
+    }
+
+    /* Adjust container width for smaller screens */
+    .container {
+        max-width: 550px;
+    }
+}
